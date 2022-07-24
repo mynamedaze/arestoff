@@ -1,0 +1,21 @@
+.vkfeeds__wrapper {
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media #{$min-tablet-width} {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media #{$min-desktop-width} {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+.vkfeeds__title {
+  @include title-main;
+  color: $title-strong-color;
+  text-align: center;
+}

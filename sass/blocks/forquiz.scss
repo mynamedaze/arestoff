@@ -1,0 +1,86 @@
+.forquiz__wrapper {
+  @include section-width;
+  @include paddings;
+  @media #{$max-mobile-width} {
+    padding-bottom: 30px;
+  }
+  @media #{$min-tablet-width} {
+    padding-bottom: 35px;
+  }
+  @media #{$min-desktop-width} {
+    padding-bottom: 40px;
+  }
+}
+.forquiz__quiz-title {
+  color: #fff;
+  background-color: rgba(59, 82, 138, 0.8);
+  display: block;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  font-weight: 400;
+  text-align: center;
+  @media #{$max-mobile-width} {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 2rem;
+    max-width: 460px;
+    @include centers;
+    margin-top: 45px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 2.8rem;
+    max-width: 660px;
+    margin-top: 60px;
+  }
+}
+.forquiz__quiz-btn-field {
+  text-align: center;
+  @media #{$max-mobile-width} {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.forquiz__quiz-button {
+  @include main-btn;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  min-height: 3.5rem;
+  font-size: 1.1rem;
+  @media #{$min-desktop-width} {
+    min-height: 5.5rem;
+    font-size: 1.6rem;
+  }
+  &:hover {
+    @include main-btn--hover;
+  }
+}
+.forquiz__grandline {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 1px;
+  background-color: #3E4E81;
+  @media #{$max-mobile-width} {
+    margin-top: 30px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 35px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 50px;
+  }
+}

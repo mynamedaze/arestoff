@@ -1,0 +1,110 @@
+.calc {
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(59, 82, 138, 0.8);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  top: 60px;
+  display: none;
+  @media #{$max-mobile-width} {
+    width: 100%;
+    left: 0;
+  }
+  @media #{$min-tablet-width} {
+    @include centers;
+    width: 600px;
+    left: 50%;
+    transform: translateX(-300px);
+  }
+  @media #{$min-desktop-width} {
+    width: 720px;
+    transform: translateX(-360px);
+  }
+}
+.calc__close-btn {
+  position: absolute;
+  background-color: transparent;
+  border: 0px solid transparent;
+  width: 30px;
+  height: 30px;
+  @media #{$max-mobile-width} {
+    top: -35px;
+    right: 5px;
+  }
+  @media #{$min-tablet-width} {
+    top: -32px;
+    right: -32px;
+  }
+}
+.calc__close-btn::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-13px, 0px) rotate(-45deg);
+}
+.calc__close-btn::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-13px, 0px) rotate(45deg);
+}
+.calc__title {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #3B528A;
+  @media #{$max-mobile-width} {
+    font-size: 2.1rem;
+    padding-top: 11px;
+    padding-bottom: 16px;
+  }
+  @media #{$min-tablet-width} {
+    font-size: 2.1rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media #{$min-desktop-width} {
+    font-size: 3rem;
+    padding-top: 18px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+.calc__stages {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/img/bg--paper.jpg");
+  padding-left: 20px;
+  padding-right: 20px;
+  @media #{$max-mobile-width} {
+    margin-top: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media #{$min-tablet-width} {
+    margin-top: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media #{$min-desktop-width} {
+    margin-top: 18px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
